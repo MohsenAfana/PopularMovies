@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="title_popular_movies">Popular</string>
+    <string name="title_top_rated">Top Rated</string>
+    <string name="title_favorites">Favorite</string>
+    <string name="reviews">Reviews</string>
+    <string name="trailers">Trial</string>
+    <string name="overview">OverView</string>
+    <string name="rating">Rating app</string>
+    <string name="privacy">Privacy Policy</string>
+</resources>

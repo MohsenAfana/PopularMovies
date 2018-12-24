@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mohsenafana.movies.Activity.MainActivity"
+    android:id="@+id/container_refresh"
+    android:background="@color/colorAccent"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:visibility="gone"
+            android:id="@+id/leinearlayout_icon_connection"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="150dp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/network_error"
+                android:backgroundTint="@color/white"
+                android:layout_height="150dp">
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textview_error_connection"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:textSize="16dp"
+                android:text="Oh No! ... There is No Internet Connection    Please  try again . "
+                android:layout_width="300dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_movies"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        app:contentPadding="2dp"
+        android:visibility="visible"
+        android:layout_height="match_parent"
+        android:paddingBottom="2dp"
+        tools:listitem="@layout/item_movie_first_photo"
+        />
+    </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
